@@ -1,0 +1,23 @@
+Most commonly used AT commands (search "AT Command Manual" online for further information):
+
+AT      – basic command
+AT+CSQ  – Check the ‘signal strength’ 
+AT+CCID – get the SIM card number
+AT+CREG?  Check that you’re registered on the network.
+
+ATI       – Get the module name and revision
+AT+COPS?  – Check that you’re connected to the network, in this case BSNL
+AT+COPS=? – Return the list of operators present in the network
+AT+CBC    – will return the lipo battery state.
+
+AT+CMGF=1 – Selects SMS message format as text.
+AT+CMGS=+ZZxxxxxxxxxx – Sends SMS to the phone number specified. The text message entered followed by a ‘Ctrl+z’ character is treated as SMS. ‘Ctrl+z’ is actually a 26th non-printing character or 0x1A HEX. 
+
+AT+CMGF=1         – Selects SMS message format as text. 
+AT+CNMI=1,2,0,0,0 – Specifies how newly arrived SMS messages should be handled.
+
+ATD+ +ZZxxxxxxxxxx; – Dials a specified number. The semicolon (;) modifier at the end separates the dial string into multiple dial commands. 
+ATH                 – Hangs up the call
+
+ATA – Accepts incoming call.
+ATH – Hangs up the call. On hanging up the call it sends NO CARRIER on the serial monitor indicating call couldn’t connect.
