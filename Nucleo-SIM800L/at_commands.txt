@@ -20,4 +20,4 @@ ATD+ +ZZxxxxxxxxxx; – Dials a specified number. The semicolon (;) modifier at 
 ATH                 – Hangs up the call
 
 ATA – Accepts incoming call.
-ATH – Hangs up the call. On hanging up the call it sends NO CARRIER on the serial monitor indicating call couldn’t connect.
+ATH – Hangs up the call. 
