@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define BTN_PRESSED	 RESET
 #define USART_BUFFER_SIZE  UINT8_MAX 
 
 USART_Handle_t *VCPHandle, *SIMHandle;
