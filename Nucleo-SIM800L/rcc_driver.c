@@ -6,7 +6,6 @@ uint32_t RCC_GetPLLOutputClock(void) {
 }
 
 uint32_t RCC_GetPCLK1Value(void) {
-
     uint32_t pclk1, systemclk, hpre, ahbprescaler;
     uint8_t clksource, ppre1, apb1prescaler;
     clksource = ((RCC->CFGR >> 2) & 0x3);
