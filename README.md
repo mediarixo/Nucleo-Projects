@@ -11,4 +11,4 @@ Toolchain: uVision V5.36.0.0, (C) Keil Software - MDK-ARM Community Edition
 
 Development board: NUCLEO-F401RE
 
-Promo video: 
+Promo video: https://youtu.be/9GcBurs7B_A
