@@ -10,7 +10,6 @@ Remarks:
 Vdd = 3.7 V Li-Po Battery
 GND wired both to sim800l module and board.									
 
-
 Software used as serial terminal: PuTTY release 0.67
 
 Remarks:
