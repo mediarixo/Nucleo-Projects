@@ -9,6 +9,12 @@ int main(void) {
 	
 	LCD_SetCursorPos(1,1);
 	LCD_Print("HITACHI DRIVER"); 
-			
+
+	LCD_SetCursorPos(1,2);
+	LCD_Print("TO THE NEW"); 
+	
+	LCD_SetCursorPos(3,3);
+	LCD_Print("LCD MODULE!!!"); 
+	
 	while(1);
 }
