@@ -29,9 +29,12 @@ void LCD_Print(const char *str)
 }
 
 void LCD_SetCursorPos(uint8_t x, uint8_t y) {
-	x += (y < 1) ? 0x00 : 0x40;
-	LCD_Cmd(LCD_SET_DDRAM_ADDR | x);
-	delay_micro(40);	
+	if (y < 4) {
+		int offset[] = { 0x00, 0x40, 0x14, 0x54 };
+		x += offset[y];
+		LCD_Cmd(LCD_SET_DDRAM_ADDR | x);
+		delay_micro(40);
+	}	
 }
 
 void LCD_SetBacklight(bool state) {
